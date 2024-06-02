@@ -311,8 +311,7 @@ button:focus {
   font-family: 'Poppins', sans-serif;
   border-bottom: 4px solid #38bdf8;
 }
-
-.container_flex {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -321,7 +320,7 @@ button:focus {
     margin: 20px auto;
 }
 
-.projekt {
+.project {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -333,25 +332,80 @@ button:focus {
     text-align: center;
 }
 
-.projekt img {
+.project img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
 }
 
-.projekt h2 {
+.project h2 {
     font-size: 1.5em;
     margin: 0.5em 0;
 }
 
-.projekt p {
+.project p {
     font-size: 1em;
     color: #666;
-    text-align: left; 
+    text-align: left; /* Left-justify the paragraph text */
     font-weight: normal;
 }
 
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%; /* Adjust width to 100% */
+}
+
+.carousel-inner img {
+    width: 100%; /* Ensure each image takes up 100% of the carousel width */
+    flex-shrink: 0;
+    height: auto;
+    border-radius: 4px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 3px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#border{
+    border-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
 
 @media (max-width: 1000px){
     #photos {

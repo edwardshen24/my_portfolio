@@ -64,4 +64,28 @@ $(document).ready(function(){
        } 
       });
   });
+
+  let currentSlideIndices = [0, 0, 0, 0]; // Track the current slide for each project
+
+function showSlide(projectIndex, slideIndex) {
+    const carouselInner = document.querySelectorAll('.carousel-inner')[projectIndex];
+    const slides = carouselInner.querySelectorAll('img');
+    if (slideIndex >= slides.length) {
+        currentSlideIndices[projectIndex] = 0;
+    } else if (slideIndex < 0) {
+        currentSlideIndices[projectIndex] = slides.length - 1;
+    } else {
+        currentSlideIndices[projectIndex] = slideIndex;
+    }
+    const newTransform = -currentSlideIndices[projectIndex] * 100 + '%';
+    carouselInner.style.transform = `translateX(${newTransform})`;
+}
+
+function nextSlide(projectIndex) {
+    showSlide(projectIndex, currentSlideIndices[projectIndex] + 1);
+}
+
+function prevSlide(projectIndex) {
+    showSlide(projectIndex, currentSlideIndices[projectIndex] - 1);
+}
   
