@@ -280,6 +280,23 @@ button:focus {
     background: rgba(0, 0, 0,0.8); 
 }
 
+#contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: fit-content;
+}
+
+.contact-info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-address {
+    margin-left: 10px;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -289,85 +306,106 @@ button:focus {
     margin: 20px auto;
 }
 
+/* Individual project card */
 .project {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
     flex: 1 1 calc(50% - 40px); /* 50% width with spacing adjustment */
     box-sizing: border-box;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside the project card */
 .project img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
+/* Project title */
 .project h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin: 0.5em 0;
+    color: #333;
 }
 
+/* Project description */
 .project p {
     font-size: 1em;
     color: #666;
-    text-align: left; /* Left-justify the paragraph text */
+    text-align: left;
     font-weight: normal;
+    line-height: 1.5;
 }
 
+/* Carousel container */
 .carousel {
     position: relative;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
+/* Inner carousel wrapper */
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
-    width: 100%; /* Adjust width to 100% */
+    width: 100%;
 }
 
+/* Images inside the carousel */
 .carousel-inner img {
-    width: 100%; /* Ensure each image takes up 100% of the carousel width */
+    width: 100%;
     flex-shrink: 0;
     height: auto;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
+/* Navigation buttons for the carousel */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 3px;
-}
-
-.next {
-    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .prev {
     left: 10px;
 }
 
+.next {
+    right: 10px;
+}
+
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 #border{

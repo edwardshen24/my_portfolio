@@ -48,8 +48,9 @@ $(document).ready(function(){
       });
   });
 
-  let currentSlideIndices = [0, 0, 0, 0]; // Track the current slide for each project
 
+/*
+let currentSlideIndices = [0, 0, 0, 0]; // Track the current slide for each project
 function showSlide(projectIndex, slideIndex) {
     const carouselInner = document.querySelectorAll('.carousel-inner')[projectIndex];
     const slides = carouselInner.querySelectorAll('img');
@@ -71,4 +72,35 @@ function nextSlide(projectIndex) {
 function prevSlide(projectIndex) {
     showSlide(projectIndex, currentSlideIndices[projectIndex] - 1);
 }
-  
+*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const projectCount = document.querySelectorAll('.project').length;
+    let currentSlideIndices = Array(projectCount).fill(0); // Track the current slide for each project
+
+    function showSlide(projectIndex, slideIndex) {
+        const carouselInner = document.querySelectorAll('.carousel-inner')[projectIndex];
+        const slides = carouselInner.querySelectorAll('img');
+        if (slideIndex >= slides.length) {
+            currentSlideIndices[projectIndex] = 0;
+        } else if (slideIndex < 0) {
+            currentSlideIndices[projectIndex] = slides.length - 1;
+        } else {
+            currentSlideIndices[projectIndex] = slideIndex;
+        }
+        const newTransform = -currentSlideIndices[projectIndex] * 100 + '%';
+        carouselInner.style.transform = `translateX(${newTransform})`;
+    }
+
+    function nextSlide(projectIndex) {
+        showSlide(projectIndex, currentSlideIndices[projectIndex] + 1);
+    }
+
+    function prevSlide(projectIndex) {
+        showSlide(projectIndex, currentSlideIndices[projectIndex] - 1);
+    }
+
+    // Attach the functions to the window object so they can be called from the HTML
+    window.nextSlide = nextSlide;
+    window.prevSlide = prevSlide;
+});
