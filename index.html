@@ -19,11 +19,11 @@
             <tr>
                 <td id="navigation">
                     <a href="#projects">Projects</a>
-                    <i class="fa-solid fa-file"></i>
+                    <i id = 'expand-icon' class="fa-solid fa-file"></i>
                     <a href="#bio">About</a>
-                    <i class="fa-solid fa-user"></i>
+                    <i id = 'expand-icon' class="fa-solid fa-user"></i>
                     <a href="#contact">Contact</a>
-                    <i class="fa-solid fa-phone"></i>
+                    <i id = 'expand-icon' class="fa-solid fa-phone"></i>
                 </td>
             </tr>
         </table>
@@ -120,25 +120,87 @@
     <div id="bio">
         <h1>About</h1>
         <p>
-            Hi, I'm Edward Shen, an aspiring data analyst. 
-            I'm experienced in tools such as SQL, Python, and Excel, and
-            eager to leverage analytical skills and detail oriented thinking to
-            delve into business insights and drive organizational success. 
+            My name is Edward Shen and I graduated from San Jose State University with a bachelor's in Management information systems. 
+            I went into this degree to learn more about the intersection between IT and business,
+            where I became interested in data analytics. 
+            I found myself enjoying delving into data and trying to gather insights through the use of Excel, SQL and Pandas.
+            I am excited to become a data analyst and bring the skills I learned throughout university to deliver 
+            more valuable insights which are supported by data driven visualizations and decisions. 
         </p>
+        <div class="apple-like-container">
+            <div class="apple-like-column">
+                <h2 class="apple-like-heading">Technical Skills</h2>
+                <div class="apple-like-list">
+                    <div class = 'apple-like-div'>
+                        <i id = 'expand-icon' class="fa-brands fa-python"></i>
+                        <div class="apple-like-list-item">Python (Pandas, Matplotlib)</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <i id = 'expand-icon' class="fa-solid fa-database"></i>
+                        <div class="apple-like-list-item">SQL</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <i id = 'expand-icon' class="fa-brands fa-html5"></i>
+                        <div class="apple-like-list-item">HTML</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <i id = 'expand-icon' class="fa-brands fa-css3-alt"></i>
+                        <div class="apple-like-list-item">CSS</div>
+                    </div>
+                </div>
+            </div>
+            <div class="apple-like-column">
+                <h2 class="apple-like-heading">Tools and Technologies</h2>
+                <div class="apple-like-list">
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M30.865 3.448l-6.583-3.167c-0.766-0.37-1.677-0.214-2.276 0.385l-12.609 11.505-5.495-4.167c-0.51-0.391-1.229-0.359-1.703 0.073l-1.76 1.604c-0.583 0.526-0.583 1.443-0.005 1.969l4.766 4.349-4.766 4.349c-0.578 0.526-0.578 1.443 0.005 1.969l1.76 1.604c0.479 0.432 1.193 0.464 1.703 0.073l5.495-4.172 12.615 11.51c0.594 0.599 1.505 0.755 2.271 0.385l6.589-3.172c0.693-0.333 1.13-1.031 1.13-1.802v-21.495c0-0.766-0.443-1.469-1.135-1.802zM24.005 23.266l-9.573-7.266 9.573-7.266z"></path> </g></svg>
+                        <div class="apple-like-list-item">VSCode</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <i id = 'expand-icon' class="fa-brands fa-github"></i>
+                        <div class="apple-like-list-item">Github</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16.941 4.976a7.033 7.033 0 0 0-4.93 2.064 7.033 7.033 0 0 0-.124 9.807l2.395-2.395a3.646 3.646 0 0 1 5.15-5.148l2.397-2.399a7.033 7.033 0 0 0-4.888-1.93zm-9.871.01a7.033 7.033 0 0 0-4.888 1.931l2.391 2.391a3.643 3.643 0 0 1 5.023.127l1.734-2.973-.1-.08a7.033 7.033 0 0 0-4.16-1.396zm15.01 2.172-2.39 2.39a3.646 3.646 0 0 1-5.15 5.15l-2.406 2.407a7.036 7.036 0 0 0 9.945-9.947zm-20.148.01a7.033 7.033 0 0 0-.002 9.681l2.397-2.397a3.643 3.643 0 0 1-.004-4.892zm7.664 7.423a3.635 3.635 0 0 1-5.017.113L2.182 17.1a7.029 7.029 0 0 0 9.007.546l.137-.112z"></path></g></svg>
+                        <div class="apple-like-list-item">Google Colaboratory</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style> .cls-1 { fill: none; } </style> </defs> <title>logo--jupyter</title> <g id="path"> <g id="path16_fill" data-name="path16 fill"> <path id="path7_fill" data-name="path7 fill" d="M26.0766,3.5878a1.69,1.69,0,1,1-1.76-1.5853,1.67,1.67,0,0,1,1.76,1.5853Z"></path> </g> </g> <g id="path-2" data-name="path"> <g id="path17_fill" data-name="path17 fill"> <path id="path8_fill" data-name="path8 fill" d="M16.2191,23.1113c-4.4866,0-8.43-1.61-10.4688-3.9882a11.1618,11.1618,0,0,0,20.9377,0C24.6541,21.5011,20.7257,23.1113,16.2191,23.1113Z"></path> </g> </g> <g id="path-3" data-name="path"> <g id="path18_fill" data-name="path18 fill"> <path id="path9_fill" data-name="path9 fill" d="M16.2191,7.6483c4.4867,0,8.43,1.61,10.4689,3.9881a11.1618,11.1618,0,0,0-20.9377,0C7.7892,9.2535,11.7126,7.6483,16.2191,7.6483Z"></path> </g> </g> <g id="path-4" data-name="path"> <g id="path19_fill" data-name="path19 fill"> <path id="path10_fill" data-name="path10 fill" d="M10.0427,27.7388a2.1085,2.1085,0,1,1-.2031-.7976,2.1278,2.1278,0,0,1,.2031.7976Z"></path> </g> </g> <g id="path-5" data-name="path"> <g id="path20_fill" data-name="path20 fill"> <path id="path11_fill" data-name="path11 fill" d="M6.26,7.1064A1.2263,1.2263,0,1,1,7.4517,5.83,1.2415,1.2415,0,0,1,6.26,7.1064Z"></path> </g> </g> <rect id="_Transparent_Rectangle_" data-name="<Transparent Rectangle>" class="cls-1" width="32" height="32"></rect> </g></svg>
+                        <div class="apple-like-list-item">Jupyter Notebook</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' width="16px" height="16px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="#000000"> <path d="M7.47 12.412l3.348-.592.031-.007-1.722-2.049a291.474 291.474 0 01-1.723-2.058c0-.01 1.779-4.909 1.789-4.926a788.95 788.95 0 012.934 5.066l2.95 5.115.023.039-10.948-.001 3.317-.587zM.9 11.788c0-.003.811-1.412 1.803-3.131L4.507 5.53l2.102-1.764C7.765 2.797 8.714 2 8.717 2a.37.37 0 01-.033.085L6.4 6.981 4.16 11.789l-1.63.002c-.897.001-1.63 0-1.63-.003z"></path> </g> </g></svg>
+                        <div class="apple-like-list-item">Microsoft Azure</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' height="16px" width="16px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26 26" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#030104;" d="M25.162,3H16v2.984h3.031v2.031H16V10h3v2h-3v2h3v2h-3v2h3v2h-3v3h9.162 C25.623,23,26,22.609,26,22.13V3.87C26,3.391,25.623,3,25.162,3z M24,20h-4v-2h4V20z M24,16h-4v-2h4V16z M24,12h-4v-2h4V12z M24,8 h-4V6h4V8z"></path> <path style="fill:#030104;" d="M0,2.889v20.223L15,26V0L0,2.889z M9.488,18.08l-1.745-3.299c-0.066-0.123-0.134-0.349-0.205-0.678 H7.511C7.478,14.258,7.4,14.494,7.277,14.81l-1.751,3.27H2.807l3.228-5.064L3.082,7.951h2.776l1.448,3.037 c0.113,0.24,0.214,0.525,0.304,0.854h0.028c0.057-0.198,0.163-0.492,0.318-0.883l1.61-3.009h2.542l-3.037,5.022l3.122,5.107 L9.488,18.08L9.488,18.08z"></path> </g> </g></svg>
+                        <div class="apple-like-list-item">Excel</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M242.69,340.3h26.62V267.7h67V241.88h-67v-72.6H242.69v72.6H176.54V267.7h66.15Z"></path><path d="M119.26,445.18h22.59V380.64h59.7V360.47h-59.7V295.13H119.26v65.34H59.56v20.17h59.7Z"></path><path d="M370.15,212h22.59V147.5h60.5V128.13h-60.5V62.79H370.15v65.34h-59.7V147.5h59.7Z"></path><path d="M246.72,496h19.36V450h41.15V433.08H266.08v-46H246.72v46H206.39V450h40.33Z"></path><path d="M120.07,212h21V146.69h60.51V128.13H141V62.79h-21v65.34H59.56v18.56h60.51Z"></path><path d="M435.72,308.84h19.36V263.66H496V245.92H455.08V200.74H435.72v45.18H395.39v17.74h40.33Z"></path><path fill-rule="evenodd" d="M370.15,445.18h22.59V380.64h60.5V360.47h-60.5V295.13H370.15v65.34h-59.7v20.17h59.7Z"></path><path d="M307,74.08V60.37H266.66V16H252.14V60.37H211.81V74.08h40.33v44.37h14.52V74.08ZM56.11,305.61H70.63V261.24H111V247.53H70.63V204H56.11v43.56H16v14.52L56.11,262Z"></path></g></svg>
+                        <div class="apple-like-list-item">Tableau</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Power BI icon</title><path d="M14.064 12.537c-.725 0-1.313.545-1.313 1.217v5.353c0 .672.589 1.217 1.314 1.217.726 0 1.314-.545 1.314-1.218v-5.352c0-.672-.589-1.217-1.315-1.217zm4.132-4.888c-.726 0-1.314.545-1.314 1.218V19.07c0 .672.59 1.217 1.314 1.217.726 0 1.314-.545 1.314-1.217V8.867c0-.673-.588-1.218-1.314-1.218zm-8.262 3.035c-.725 0-1.313.545-1.313 1.218v7.205c0 .672.589 1.217 1.315 1.217.725 0 1.313-.545 1.313-1.218v-7.205c0-.672-.589-1.217-1.315-1.217zm-4.13 4.398h-.001c-.726 0-1.314.546-1.314 1.218l.001 2.807c0 .672.588 1.217 1.314 1.217.726 0 1.314-.545 1.313-1.218V16.3c0-.673-.588-1.218-1.314-1.218zM24 6.3v9.163c0 1.447-1.27 2.624-2.831 2.624h-.484v-.897h.484c1.027 0 1.863-.775 1.863-1.727V6.3c0-.952-.836-1.726-1.863-1.726H2.831C1.804 4.574.968 5.348.968 6.3v9.163c0 .952.836 1.727 1.863 1.727h.484v.897H2.83C1.27 18.086 0 16.909 0 15.462V6.3c0-1.446 1.27-2.623 2.83-2.623h18.34C22.73 3.676 24 4.853 24 6.3Z"></path></g></svg>
+                        <div class="apple-like-list-item">Power BI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="contact">
         <h1>Contact</h1>
         <div id="contact-info-container">
             <div class="contact-info-row">
-                <i class="fas fa-at"></i> &nbsp; edwardshen24@email.com
+                <i id = 'expand-icon' class="fas fa-at"></i> &nbsp; edwardshen24@email.com
             </div>
             <div class="contact-info-row">
-                <i class="fas fa-map-marker-alt"></i>
+                <i id = 'expand-icon' class="fas fa-map-marker-alt"></i>
                 <div class="contact-address">California</div>
             </div>
             <div class="contact-info-row">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i id = 'expand-icon' class="fa-brands fa-linkedin-in"></i>
                 <a class="contact-address" href="https://www.linkedin.com/in/shened/">shened</a>
             </div>
         </div>

@@ -297,6 +297,70 @@ button:focus {
 .contact-address {
     margin-left: 10px;
 }
+
+
+.apple-like-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    flex-wrap:wrap;
+}
+
+.apple-like-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.apple-like-heading {
+    color: #1d1d1f;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.apple-like-div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.apple-like-list {
+    padding: 0;
+}
+
+.apple-like-list-item-container {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e2;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.apple-like-list-item-container i {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #333;
+}
+
+.apple-like-list-item {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.apple-like-list-item-container:hover {
+    background-color: #d4d4d8;
+}
+
+#expand-icon:hover{
+    transition: transform 0.42s ease;
+    transform: scale(1.24);
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
