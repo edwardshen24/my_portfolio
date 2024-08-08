@@ -31,7 +31,7 @@
     <table id="top_part">
         <tr>
             <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1>Hi, I'm Edward Shen, an aspiring data analyst/IT technician.</h1>
+                <h1>Hi, I'm Edward Shen</h1>
                 <table>
                 </table>
             </td>
@@ -42,6 +42,42 @@
     <div id="projects">
         <h1>Projects</h1>
         <div class="container">
+            <div class="project">
+                <h2>Mastodon Virtual Machine Instance</h2>
+                <br><div id="border"></div><br>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="photos/mastodon.png" alt="mastodon">
+                        <img src="photos/chart.png" alt="chart">
+                        <img src="photos/Gantt.png" alt="gantt">
+                    </div>
+                    <button class="prev" onclick="prevSlide(0)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(0)">&#10095;</button>
+                </div>
+                <br><div id="border"></div><br>
+                <p>Directed a team of six to deploy and manage a Linux Mastodon instance on Microsoft Azure for Stanford, ensuring a secure and safe social media platform for over 50 students, while adhering to SDLC processes</p>
+                <p>Designed ERD and UML diagrams for virtual machine data modeling and architecture visualization, improving documentation clarity and system understanding by 15%</p>
+                <p>Integrated Storj as an S3-compatible storage provider and deployed PostgreSQL, enhancing scalability and database management efficiency by 60%</p>
+                <p>Conducted weekly sprints with stakeholders to review and align project goals with stakeholder expectations</p>
+            </div>
+            <div class="project">
+                <h2>Packet Tracer Network Design</h2>
+                <br><div id="border"></div><br>
+                <img src="photos/network.PNG" alt="Network">
+                <br><div id="border"></div><br>
+                <p>Designed and implemented network topologies using Cisco Packet Tracer, configuring PCs, routers, and switches in a logical environment, resulting in an 80% improvement in network connectivity</p>
+                <p>Set up IPv4 addresses, subnet masks, default gateways, and VLANs for end hosts through DHCP servers and subnetting, ensuring organized network communication with a 40% reduction in IP conflicts</p>
+                <p>Executed end-to-end connectivity tests using ping and tracert between end users, verifying network stability and reliability </p>
+            </div>
+            <div class="project">
+                <h2>Active Directory Homelab</h2>
+                <br><div id="border"></div><br>
+                <img src="photos/vm.PNG" alt="Active Directory">
+                <br><div id="border"></div><br>
+                <p>Deployed an Active Directory environment through Windows Server 2022 using virtual machines through VirtualBox, managing 20 user accounts over 3 groups to streamline access control and organizational structure</p>
+                <p>Implemented Group Policy Objects to automate security settings and software installations, reducing manual configuration errors by 50%</p>
+                <p>Set up a NAT network for isolated and secure communication between VMs, reducing external network exposure and ensuring a controlled testing environment</p>
+            </div>
             <div class="project">
                 <h2>Drug Mortality Visualization</h2>
                 <br><div id="border"></div><br>
@@ -58,8 +94,8 @@
                         <img src="photos/powerbi.PNG" alt="powerbi">
                         <img src="photos/datapowerbi.PNG" alt="powerbi">
                     </div>
-                    <button class="prev" onclick="prevSlide(0)">&#10094;</button>
-                    <button class="next" onclick="nextSlide(0)">&#10095;</button>
+                    <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
                 </div>
                 <br><div id="border"></div><br>
                 <p>Utilized Power Query to clean and transform sales data, ensuring high data integrity and reliability for
@@ -78,8 +114,8 @@
                         <img src="photos/analysis.PNG" alt="Profit Optimization">
                         <img src="photos/codeanalysis.PNG" alt="Profit Optimization">
                     </div>
-                    <button class="prev" onclick="prevSlide(1)">&#10094;</button>
-                    <button class="next" onclick="nextSlide(1)">&#10095;</button>
+                    <button class="prev" onclick="prevSlide(2)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(2)">&#10095;</button>
                 </div>
                 <br><div id="border"></div><br>
                 <p>Performed comprehensive data cleaning on files through Excel and Python in Jupyter Notebooks,
@@ -97,24 +133,12 @@
                         <img src="photos/uploader.png" alt="AI for Social Good">
                         <img src="photos/insight.png" alt="AI for Social Good">
                     </div>
-                    <button class="prev" onclick="prevSlide(2)">&#10094;</button>
-                    <button class="next" onclick="nextSlide(2)">&#10095;</button>
+                    <button class="prev" onclick="prevSlide(3)">&#10094;</button>
+                    <button class="next" onclick="nextSlide(3)">&#10095;</button>
                 </div>
                 <br><div id="border"></div><br>
                 <p>Collaborated with a team to design and implement ChatGPT Vision in Python Streamlit which allows users to upload images of potholes that get detected by Vision and plotted on a map.</p>
                 <p>Presented in front of industry experts emphasizing benefits for social good and practicality.</p>
-            </div>
-            <div class="project">
-                <h2>Mastodon Virtual Machine Instance</h2>
-                <br><div id="border"></div><br>
-                <img src="photos/mastodon.png" alt="Mastodon Virtual Machine Instance">
-                <br><div id="border"></div><br>
-                <p>Partnered in a team of six to deploy and manage a Mastodon instance on Microsoft Azure for Stanford while
-                    following SDLC processes and ensuring a secure and safe social media platform for students.</p>
-                <p>Designed ERD and UML diagrams for virtual machine data modeling and architecture visualization.</p>
-                <p>Integrated Storj as an S3-compatible storage provider and deployed PostgreSQL for enhanced scalability and
-                    efficient data management.</p>
-                <p>Conducted weekly sprints with stakeholders to review and align project goals with stakeholder expectations</p>
             </div>
             <div class="project">
                 <h2>Store Sales Visualization Tableau</h2>
@@ -143,14 +167,8 @@
     <div id="bio">
         <h1>About</h1>
         <p>
-            My name is Edward Shen and I graduated from San Jose State University with a bachelor's in Management information systems. 
-            I went into this degree to learn more about the intersection between IT and business,
-            where I became interested in data analytics. 
-            I found myself enjoying delving into data and trying to gather insights through the use of Excel, SQL and Pandas.
-            I am excited to become a data analyst and bring the skills I learned throughout university to deliver 
-            more valuable insights which are supported by data driven visualizations and decisions. 
+            Hello, My name is Edward Shen and I'm tech-savvy and deeply passionate about the field of IT because it is constantly evolving and presenting new challenges. The dynamic nature of technology means that there are always new advancements, tools, and methodologies to explore, which aligns perfectly with my love for continuous learning. I thrive in environments where I can stay on the cutting edge of technological trends and develop my skills further. The rapid growth in IT not only keeps me engaged but also drives me to adapt and expand my expertise, ensuring that I am always at the forefront of innovation. 
         </p>
-        <p>In addition to my passion for data analytics, I have a strong interest in the broader field of Information Technology. Throughout my coursework and internships, I have gained a solid foundation in IT principles, including network security, database management, and systems analysis. I enjoy understanding how IT infrastructure supports business operations and enables organizations to achieve their strategic goals. My background in IT complements my analytical skills, allowing me to approach problems from both a technical and business perspective, ensuring that the solutions I develop are both efficient and aligned with organizational objectives.</p>
         <div class="apple-like-container">
             <div class="apple-like-column">
                 <h2 class="apple-like-heading">Technical Skills</h2>
@@ -207,6 +225,18 @@
                     <div class = 'apple-like-div'>
                         <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>Power BI icon</title><path d="M14.064 12.537c-.725 0-1.313.545-1.313 1.217v5.353c0 .672.589 1.217 1.314 1.217.726 0 1.314-.545 1.314-1.218v-5.352c0-.672-.589-1.217-1.315-1.217zm4.132-4.888c-.726 0-1.314.545-1.314 1.218V19.07c0 .672.59 1.217 1.314 1.217.726 0 1.314-.545 1.314-1.217V8.867c0-.673-.588-1.218-1.314-1.218zm-8.262 3.035c-.725 0-1.313.545-1.313 1.218v7.205c0 .672.589 1.217 1.315 1.217.725 0 1.313-.545 1.313-1.218v-7.205c0-.672-.589-1.217-1.315-1.217zm-4.13 4.398h-.001c-.726 0-1.314.546-1.314 1.218l.001 2.807c0 .672.588 1.217 1.314 1.217.726 0 1.314-.545 1.313-1.218V16.3c0-.673-.588-1.218-1.314-1.218zM24 6.3v9.163c0 1.447-1.27 2.624-2.831 2.624h-.484v-.897h.484c1.027 0 1.863-.775 1.863-1.727V6.3c0-.952-.836-1.726-1.863-1.726H2.831C1.804 4.574.968 5.348.968 6.3v9.163c0 .952.836 1.727 1.863 1.727h.484v.897H2.83C1.27 18.086 0 16.909 0 15.462V6.3c0-1.446 1.27-2.623 2.83-2.623h18.34C22.73 3.676 24 4.853 24 6.3Z"></path></g></svg>
                         <div class="apple-like-list-item">Power BI & Power Query</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>virtual-machine-solid</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="Q3_icons" data-name="Q3 icons"> <g> <rect x="4" y="2" width="10" height="7"></rect> <path d="M3.5,14h11a1.5,1.5,0,0,0,0-3H3.5a1.5,1.5,0,0,0,0,3Z"></path> <rect x="19" y="2" width="10" height="7"></rect> <path d="M18.5,14h11a1.5,1.5,0,0,0,0-3h-11a1.5,1.5,0,0,0,0,3Z"></path> <rect x="34" y="2" width="10" height="7"></rect> <path d="M33.5,14h11a1.5,1.5,0,0,0,0-3h-11a1.5,1.5,0,0,0,0,3Z"></path> <path d="M44,30H26V25.5H39a2,2,0,0,0,2-2V18a2,2,0,0,0-4,0v3.5H26V18a2,2,0,0,0-4,0v3.5H11V18a2,2,0,0,0-4,0v5.5a2,2,0,0,0,2,2H22V30H4a2,2,0,0,0-2,2V44a2,2,0,0,0,2,2H44a2,2,0,0,0,2-2V32A2,2,0,0,0,44,30ZM16,40H10a2,2,0,0,1,0-4h6a2,2,0,0,1,0,4Zm22,0H32a2,2,0,0,1,0-4h6a2,2,0,0,1,0,4Z"></path> </g> </g> </g> </g></svg>
+                        <div class="apple-like-list-item">Virtual Machines</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M13.61 20.81V3.19a2.19 2.19 0 0 0-.28 0l-1.42.25C9.05 4 6.18 4.5 3.31 5c-.25 0-.31.13-.31.38V19Zm-7.89-6.2c.54-1.92 1.09-3.84 1.62-5.77a.34.34 0 0 1 .4-.3h.73c.47 0 .39-.08.52.36l1.56 5.36.38 1.3c-.47 0-.89 0-1.31-.1-.06 0-.14-.11-.16-.19q-.17-.59-.3-1.17a.23.23 0 0 0-.25-.21h-1.6c-.07 0-.17.1-.2.18-.1.34-.19.69-.26 1 0 .19-.13.24-.31.22s-.62-.05-1-.07c.09-.22.13-.44.18-.61Z"></path><path d="M8.13 9.81h-.05l-.67 2.82h1.4c-.23-.96-.45-1.89-.68-2.82ZM17 5.71q-.93-.23-1.83-.48c-.16 0-.22 0-.28.14a4.92 4.92 0 0 0-.68 3.09c0 .23 0 .31.29.33a3.17 3.17 0 0 1 1 6.05 9.87 9.87 0 0 1-1.3.37v1.87a5.65 5.65 0 0 0 .85-.1.36.36 0 0 1 .43.18c.32.44.66.87 1 1.32l1.86-1.1c.05 0 .07-.17.05-.24-.13-.37-.26-.74-.42-1.1s-.19-.58.12-.83a1.29 1.29 0 0 0 .28-.37.28.28 0 0 1 .33-.14c.5.08 1 .13 1.51.21.17 0 .23 0 .27-.19.15-.6.31-1.2.47-1.8 0-.14 0-.22-.12-.28s-.59-.29-.9-.39a.88.88 0 0 1-.71-.94.81.81 0 0 1 .39-.83c.37-.25.72-.54 1.09-.82l-1.03-1.78c-.07-.14-.16-.13-.28-.08-.45.17-.9.35-1.35.5a.42.42 0 0 1-.32-.06c-.21-.14-.38-.33-.59-.47a.29.29 0 0 1-.13-.35c.07-.47.13-1 .2-1.43 0-.15-.03-.24-.2-.28Z"></path><path d="M15.39 12a1.14 1.14 0 0 0-1.17-1.11v2.29A1.15 1.15 0 0 0 15.39 12Z"></path></g></svg>
+                        <div class="apple-like-list-item">Active Directory</div>
+                    </div>
+                    <div class = 'apple-like-div'>
+                        <svg id = 'expand-icon' fill="#000000" width="16px" height="16px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>windows [#174]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7439.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M13.1458647,7289.43426 C13.1508772,7291.43316 13.1568922,7294.82929 13.1619048,7297.46884 C16.7759398,7297.95757 20.3899749,7298.4613 23.997995,7299 C23.997995,7295.84873 24.002005,7292.71146 23.997995,7289.71311 C20.3809524,7289.71311 16.7649123,7289.43426 13.1458647,7289.43426 M4,7289.43526 L4,7296.22153 C6.72581454,7296.58933 9.45162907,7296.94113 12.1724311,7297.34291 C12.1774436,7294.71736 12.1704261,7292.0908 12.1704261,7289.46524 C9.44661654,7289.47024 6.72380952,7289.42627 4,7289.43526 M4,7281.84344 L4,7288.61071 C6.72581454,7288.61771 9.45162907,7288.57673 12.1774436,7288.57973 C12.1754386,7285.96017 12.1754386,7283.34361 12.1724311,7280.72405 C9.44461153,7281.06486 6.71679198,7281.42567 4,7281.84344 M24,7288.47179 C20.3879699,7288.48578 16.7759398,7288.54075 13.1619048,7288.55175 C13.1598997,7285.88921 13.1598997,7283.22967 13.1619048,7280.56914 C16.7689223,7280.01844 20.3839599,7279.50072 23.997995,7279 C24,7282.15826 23.997995,7285.31353 24,7288.47179" id="windows-[#174]"> </path> </g> </g> </g> </g></svg>
+                        <div class="apple-like-list-item">Windows 10/11/Server 2022</div>
                     </div>
                 </div>
             </div>
